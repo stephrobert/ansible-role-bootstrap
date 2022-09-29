@@ -1,10 +1,10 @@
-# bootstrap
+# stephrobert.bootstrap
 
 [![Maintainer](https://img.shields.io/badge/maintained%20by-stephrobert-e00000?style=flat-square)](https://www.stephrobert.fr/)
 [![License](https://img.shields.io/github/license/stephrobert/ansible-role-bootstrap?style=flat-square)](https://github.com/stephrobert/ansible-role-bootstrap/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/stephrobert/ansible-role-bootstrap?style=flat-square)](https://github.com/stephrobert/ansible-role-bootstrap/releases)
 [![Status](https://img.shields.io/github/workflow/status/stephrobert/ansible-role-bootstrap/Ansible%20Molecule?style=flat-square&label=tests)](https://github.com/stephrobert/ansible-role-bootstrap/actions?query=workflow%3A%22Ansible+Molecule%22)
-[![Ansible Galaxy](https://img.shields.io/badge/ansible-galaxy-black.svg?style=flat-square&logo=ansible)](https://galaxy.ansible.com/stephrobert/)[![Ansible version](https://img.shields.io/badge/ansible-%3E%3D2.10-black.svg?style=flat-square&logo=ansible)](https://github.com/ansible/ansible)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible-galaxy-black.svg?style=flat-square&logo=ansible)](https://galaxy.ansible.com/stephrobert/bootstrap)[![Ansible version](https://img.shields.io/badge/ansible-%3E%3D2.10-black.svg?style=flat-square&logo=ansible)](https://github.com/ansible/ansible)
 
 ⭐ Star us on GitHub — it motivates us a lot!
 
@@ -31,7 +31,7 @@ None.
 ### Install with Ansible Galaxy
 
 ```shell
-ansible-galaxy install bootstrap
+ansible-galaxy install stephrobert.bootstrap
 ```
 
 ### Install with git
@@ -39,13 +39,13 @@ ansible-galaxy install bootstrap
 If you do not want a global installation, clone it into your `roles_path`.
 
 ```bash
-git clone git@github.com:stephrobert/ansible-role-bootstrap.git  bootstrap
+git clone git@github.com:stephrobert/ansible-role-bootstrap.git  stephrobert.bootstrap
 ```
 
 But I often add it as a submodule in a given `playbook_dir` repository.
 
 ```bash
-git submodule add git@github.com:stephrobert/ansible-role-bootstrap.git roles/bootstrap
+git submodule add git@github.com:stephrobert/ansible-role-bootstrap.git roles/stephrobert.bootstrap
 ```
 
 As the role is not managed by Ansible Galaxy, you do not have to specify the
@@ -58,7 +58,7 @@ Basic usage is:
 ```yaml
 - hosts: all
   roles:
-    - role: bootstrap
+    - role: stephrobert.bootstrap
       vars:
         bootstrap_timeout: 10
         
