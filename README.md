@@ -1,18 +1,26 @@
 # bootstrap
 
-[![Ansible version](https://img.shields.io/badge/ansible-%3E%3D2.10-black.svg?style=flat-square&logo=ansible)](https://github.com/ansible/ansible)
+[![Maintainer](https://img.shields.io/badge/maintained%20by-stephrobert-e00000?style=flat-square)](https://www.stephrobert.fr/)
+[![License](https://img.shields.io/github/license/stephrobert/ansible-role-bootstrap?style=flat-square)](https://github.com/stephrobert/ansible-role-bootstrap/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/stephrobert/ansible-role-bootstrap?style=flat-square)](https://github.com/stephrobert/ansible-role-bootstrap/releases)
+[![Status](https://img.shields.io/github/workflow/status/stephrobert/ansible-role-bootstrap/Ansible%20Molecule?style=flat-square&label=tests)](https://github.com/stephrobert/ansible-role-bootstrap/actions?query=workflow%3A%22Ansible+Molecule%22)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible-galaxy-black.svg?style=flat-square&logo=ansible)](https://galaxy.ansible.com/stephrobert/)[![Ansible version](https://img.shields.io/badge/ansible-%3E%3D2.10-black.svg?style=flat-square&logo=ansible)](https://github.com/ansible/ansible)
 
 ⭐ Star us on GitHub — it motivates us a lot!
 
-your role description
+Prepare your system to be managed by Ansible.
 
 **Platforms Supported**:
 
-None.
+| Platform | Versions |
+|----------|----------|
+| Fedora | 35, 36 |
+| Ubuntu | jammy |
+| Debian | bullseye |
 
 ## ⚠️ Requirements
 
-Ansible >= 2.1.
+Ansible >= 2.12.
 
 ### Ansible role dependencies
 
@@ -31,13 +39,13 @@ ansible-galaxy install bootstrap
 If you do not want a global installation, clone it into your `roles_path`.
 
 ```bash
-git clone   bootstrap
+git clone git@github.com:stephrobert/ansible-role-bootstrap.git  bootstrap
 ```
 
 But I often add it as a submodule in a given `playbook_dir` repository.
 
 ```bash
-git submodule add  roles/bootstrap
+git submodule add git@github.com:stephrobert/ansible-role-bootstrap.git roles/bootstrap
 ```
 
 As the role is not managed by Ansible Galaxy, you do not have to specify the
@@ -76,7 +84,7 @@ Bootsrap a machine for Ansible.
 
 | Variable Name | Required | Type | Default | Elements | Description |
 |---------------|----------|------|---------|----------|-------------|
-| bootstrap_timeout | False | int | 10 |  |  |
+| bootstrap_timeout | False | int | 10 |  | Time (in seconds) to wait for connection. |
 
 ### Context variables
 
@@ -98,4 +106,4 @@ Variables loaded from `vars/main.yml`.
 
 ## Author Information
 
-your company (optional)
+none
