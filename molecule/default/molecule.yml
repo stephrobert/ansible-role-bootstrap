@@ -25,3 +25,7 @@ verifier:
   name: testinfra
   options:
     s: true
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
