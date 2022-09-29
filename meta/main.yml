@@ -1,4 +1,6 @@
 galaxy_info:
+  namespace: stephrobert
+  role_name: bootstrap
   author: Stéphane ROBERT
   description: Prepare your system to be managed by Ansible.
   company: none
