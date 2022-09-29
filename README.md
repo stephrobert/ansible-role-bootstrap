@@ -1,6 +1,6 @@
 # stephrobert.bootstrap
 
-[![Maintainer](https://img.shields.io/badge/maintained%20by-stephrobert-e00000?style=flat-square)](https://www.stephrobert.fr/)
+[![Maintainer](https://img.shields.io/badge/maintained%20by-stephrobert-e00000?style=flat-square)](https://github.com/stephrobert)
 [![License](https://img.shields.io/github/license/stephrobert/ansible-role-bootstrap?style=flat-square)](https://github.com/stephrobert/ansible-role-bootstrap/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/stephrobert/ansible-role-bootstrap?style=flat-square)](https://github.com/stephrobert/ansible-role-bootstrap/releases)
 [![Status](https://img.shields.io/github/workflow/status/stephrobert/ansible-role-bootstrap/Ansible%20Molecule?style=flat-square&label=tests)](https://github.com/stephrobert/ansible-role-bootstrap/actions?query=workflow%3A%22Ansible+Molecule%22)
