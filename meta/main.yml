@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Stéphane ROBERT
+  description: Prepare your system to be managed by Ansible.
+  company: none
+  license: MPL-2.0
+  min_ansible_version: "2.12"
+  platforms:
+  - name: Fedora
+    versions:
+    - "35"
+    - "36"
+  - name: Ubuntu
+    versions:
+    - "jammy"
+  - name: Debian
+    versions:
+    - "bullseye"
+  galaxy_tags:
+    - python
+    - ansible
+    - sudo
+dependencies: []

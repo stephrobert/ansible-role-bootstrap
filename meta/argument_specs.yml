@@ -1,0 +1,12 @@
+---
+argument_specs:
+  main:
+    short_description: "Bootsrap a machine for Ansible."
+    description: >
+      Install minimal package to allow Ansible to manage Hosts.
+    author: Stephane ROBERT
+    options:
+      bootstrap_timeout:
+        type: int
+        default: 10
+        description: "Time (in seconds) to wait for connection."
