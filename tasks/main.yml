@@ -1,7 +1,7 @@
 ---
 # tasks file for
 - name: Wait for port to be available
-  become: no
+  become: false
   block:
     - name: Constitute minimal facts
       ansible.builtin.wait_for_connection:
@@ -16,6 +16,7 @@
     - name: Install bootstrap packages (raw)
       ansible.builtin.raw: "{{ bootstrap_install.raw }}"
       register: bootstrap_install_packages
+      become: true
       changed_when:
         - (bootstrap_install.stdout_regex in bootstrap_install_packages.stdout and
           bootstrap_os_family in [ "Alpine", "Archlinux", "Gentoo" ]) or
@@ -23,12 +24,13 @@
           bootstrap_os_family in [ "Debian", "RedHat", "Rocky", "Suse" ])
 
 - name: Ensure system is prepared
-  become: no
+  become: false
   block:
     - name: Gather ansible facts
       ansible.builtin.setup:
 
     - name: Install bootstrap packages (package)
+      become: true
       ansible.builtin.package:
         name: "{{ item }}"
         state: present
