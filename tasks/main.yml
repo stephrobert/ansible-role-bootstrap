@@ -28,7 +28,9 @@
   block:
     - name: Gather ansible facts
       ansible.builtin.setup:
-
+    - name: Update cache
+      ansible.builtin.include_tasks:
+        file: update_cache.yml
     - name: Install bootstrap packages (package)
       become: true
       ansible.builtin.package:

@@ -1,0 +1,36 @@
+- name: Update apt cache
+  ansible.builtin.apt:
+    update_cache: yes
+  when: ansible_pkg_mgr == "apt"
+  become: true
+
+- name: Update yum cache
+  ansible.builtin.yum:
+    update_cache: yes
+  when: ansible_pkg_mgr == "yum"
+  become: true
+
+- name: Update apk cache
+  community.general.apk:
+    update_cache: yes
+  when: ansible_pkg_mgr == "apk"
+  become: true
+
+- name: Update dnf cache
+  ansible.builtin.dnf:
+    update_cache: yes
+  when: ansible_pkg_mgr == "dnf"
+  become: true
+
+- name: Update zypper cache
+  community.general.zypper:
+    name: zypper
+    update_cache: yes
+  when: ansible_pkg_mgr == "zypper"
+  become: true
+
+- name: Update pacman cache
+  community.general.pacman:
+    update_cache: yes
+  when: ansible_pkg_mgr == "pacman"
+  become: true
