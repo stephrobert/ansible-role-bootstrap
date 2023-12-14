@@ -81,12 +81,12 @@ _bootstrap_install:
     stdout_regex: "Nothing"
 
 _bootstrap_packages:
-  Alpine: python3 sudo
-  Archlinux: python sudo
-  Debian: python3 sudo gnupg python3-apt
+  Alpine: python3 sudo py3-pip
+  Archlinux: python sudo python-pip
+  Debian: python3 sudo gnupg python3-apt python3-pip
   Gentoo: python sudo gentoolkit
-  RedHat: &redhat_packages python3 sudo
-  Suse: python3 python3-xml sudo
+  RedHat: &redhat_packages python3 sudo python3-pip
+  Suse: python3 python3-xml sudo python3-pip
   Amazon: python sudo
   CentOS_7: python sudo
   Debian_8: python sudo gnupg
